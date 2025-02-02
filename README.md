@@ -10,7 +10,7 @@ A simple RESTful API built with NestJS that classifies a number based on several
 - Classify a number as Perfect or Not Perfect.
 - Check if the number is an Armstrong number.
 - Calculate the digit sum of the number.
-- Retrieve a fun mathematical fact about the number from the Numbers API.
+- Retrieve a fun mathematical fact about the number from the [Numbers API](https://numbersapi.com/).
 
 The API is deployed to a publicly accessible endpoint and handles Cross-Origin Resource Sharing (CORS) appropriately.
 
@@ -48,7 +48,7 @@ The API is deployed to a publicly accessible endpoint and handles Cross-Origin R
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/edwinedjokpa/hng-internship-stage-zero.git
+   git clone https://github.com/edwinedjokpa/hng-internship-stage-one.git
    cd your-repo
    ```
 2. **Install Dependencies**:
@@ -70,7 +70,7 @@ The API is deployed to a publicly accessible endpoint and handles Cross-Origin R
 - **GET /api/classify-number**:
 
 ```bash
-curl -X GET http://localhost:3000/api/classify-number?number=7
+curl -X GET http://localhost:3000/api/classify-number?number=371
 ```
 
 ### Response (200 OK)
