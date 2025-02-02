@@ -4,7 +4,7 @@ import axios from 'axios';
 
 @Injectable()
 export class PingService {
-  @Cron(CronExpression.EVERY_10_SECONDS)
+  @Cron(CronExpression.EVERY_10_MINUTES)
   handleCron() {
     console.log('Pinging app to keep it alive...');
     this.pingApp();
