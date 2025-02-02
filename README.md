@@ -122,7 +122,7 @@ If the number is not provided or is not a valid number, the API returns a 400 Ba
 
 ### Deployment
 
-## The API is deployed on Render, and you can access it at [https://hng-internship-stage-one.onrender.com/](https://hng-internship-stage-one.onrender.com/).
+## The API is deployed on Render, and you can access it at [https://hng-internship-stage-one.onrender.com/api](https://hng-internship-stage-one.onrender.com/api).
 
 ## Backlinks
 
