@@ -14,7 +14,7 @@ export class AppController {
   async classifyNumber(@Query('number') number: string) {
     const parsedNumber = parseInt(number, 10);
 
-    if (isNaN(parsedNumber)) {
+    if (isNaN(parsedNumber) || parsedNumber < 0) {
       return {
         number: number,
         error: true,
