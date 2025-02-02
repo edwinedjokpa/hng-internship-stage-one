@@ -4,7 +4,7 @@ import axios from 'axios';
 
 @Injectable()
 export class PingService {
-  @Cron(CronExpression.EVERY_10_MINUTES)
+  @Cron(CronExpression.EVERY_10_SECONDS)
   handleCron() {
     console.log('Pinging app to keep it alive...');
     this.pingApp();
@@ -12,7 +12,7 @@ export class PingService {
 
   async pingApp() {
     try {
-      await axios.get('https://hng-internship-stage-one.onrender.com');
+      await axios.get('https://hng-internship-stage-one.onrender.com/api');
       console.log('Ping successful!');
     } catch (error) {
       console.error('Error while pinging the app:', error);
