@@ -12,6 +12,15 @@ export class AppController {
 
   @Get('classify-number')
   async classifyNumber(@Query('number') number: string) {
+    const regex = /^-?\d+$/;
+
+    if (!regex.test(number)) {
+      return {
+        number: number,
+        error: true,
+      };
+    }
+
     const parsedNumber = parseInt(number, 10);
 
     if (isNaN(parsedNumber)) {
